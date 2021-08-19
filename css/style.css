@@ -1,0 +1,102 @@
+/* resetando a estrutura base*/
+
+*{/* seletor universal, irá selecionar qualquer elemento do documento.*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* utilizada para alterar a propriedade padrão da box model*/
+    text-decoration: none; /* Tira as decorações do texto*/
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;/* explicação do que é abaixo*/
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex; /* flexbox*/
+    justify-content: center; /* Alinha os items, no sentido horizontal, exemplo na horizontal os itens vão ficar no centro*/
+
+    /* A medida vh é igual a 1/100 da altura da viewport. 
+    Então, por exemplo, se a altura do navegador é 900px , 
+    1vh equivale a 9px e, analogamente, se a largura da viewport 
+    é 750px , 1vw equivale a 7.5px*/
+
+}
+
+
+
+/* Classes*/
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center;/* Alinha os items, no sentido vertical, exemplo na vertica os itens vão ficar no centro*/
+    justify-content: start; /* o parametro start faz o alinhamento começar da esquerda para a direita*/
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img{
+    height: 50rem;
+
+    /* 
+    ***rem é bom para grids***
+    rem não é útil apenas para dimensionamento de fontes. 
+    Por exemplo, é possível basear um sistema de grids inteiro 
+    ou uma biblioteca de estilos tomando por base o tamanho 
+    de fonte do elemento raiz <html> usando em, utilizando 
+    em para escalar em locais específicos.*/
+
+}
+
+
+.instagram-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1){ /* Pega o primeiro filho do elemento*/
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /* para a imagem não exceder*/
+}
+
+.profile-photo img{
+    height: 6rem;
+}
