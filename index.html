@@ -10,6 +10,52 @@
 
 </head>
 <body>
-    teste
+    <div class="instagram-wrapper"> <!--flexbox pai-->
+
+        <div class="instagram-phone"> <!-- flex item onde fica a imagem do celular-->
+            <img src="./img/instagram-celular.png" alt="Celular com instagram instalado">
+        </div>
+
+
+
+        <div class="instagram-continue"> <!-- flex item onde fica a opção para continuar, trocar a conta e vaixa o APP do instagram-->
+
+            <div class="group"> <!-- flex item onde fica os demais itens do lado direito da pagina-->
+
+                <img src="./img/instagram-logo.png" alt="logotipo do instagram" class="instagram-logo">
+
+                <div class="profile-photo"> <!--Item filho que é referente a foto de perfil-->
+                    <img src="./img/perfil-instagram.jpg" alt="Foto de perfil instagram">
+                </div>
+
+                <!--Onde vai ficar os botões com os links, nesse caso vai ser feito usando "a" para links-->
+                <a href="https://www.instagram.com/" class="instagram-login" target="_blank">Continuar como Marcelo Henrique</a>
+                <a href="" class="instagram-logout" target="_blank">Remover conta</a>
+
+            </div>
+
+            <div class="group"> <!--outro flex item com a classe group para poder separar bem os items-->
+                <p class="not-account">Não é Marcelo Henrique ?</p>
+                <p class="notaccount">
+                    <span class="link-blue">Alternar contas</span> <!--foi usado o span, pq ele fica na mesma linha, o div pula linha-->
+                    ou
+                    <span class="link-blue">inscreva-se</span>
+                </p>
+            </div>
+
+            <!--Cria o flex item-->
+            <div class="get-the-app">
+
+                <p class="get-app">baixe o aplicativo</p> <!--Paragrafo com o texto baixar o app-->
+
+                <div class="download"> <!-- para criar os botoes de download-->
+                    <a href="#" target="_blank" class="app-download"></a>
+                    <a href="#" target="_blank" class="app-download"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
 </html>
